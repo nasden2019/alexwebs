@@ -3,33 +3,37 @@ import data from './Data'
 
 const ProjectList = () => {
 
-const [projects, setProjects] = React.useState(data);
+  const [projects, setProjects] = React.useState(data);
 
-// display text on hover:
-const [isShown, setIsShown] = React.useState(false);
-const [isShown2, setIsShown2] = React.useState(false);
-// const [isShown3, setIsShown3] = React.useState(false);
-const [isShown4, setIsShown4] = React.useState(false);
-const [isShown5, setIsShown5] = React.useState(false);
-const [isShown6, setIsShown6] = React.useState(false);
-const [isShown7, setIsShown7] = React.useState(false);
-const [isShown8, setIsShown8] = React.useState(false);
-const [isShown9, setIsShown9] = React.useState(false);
+  // display text on hover:
+  const [isShown, setIsShown] = React.useState(false);
+  const [isShown2, setIsShown2] = React.useState(false);
+  // const [isShown3, setIsShown3] = React.useState(false);
+  const [isShown4, setIsShown4] = React.useState(false);
+  const [isShown5, setIsShown5] = React.useState(false);
+  const [isShown6, setIsShown6] = React.useState(false);
+  const [isShown7, setIsShown7] = React.useState(false);
+  const [isShown8, setIsShown8] = React.useState(false);
+  const [isShown9, setIsShown9] = React.useState(false);
+  const [isShown10, setIsShown10] = React.useState(false);
+  const [isShown11, setIsShown11] = React.useState(false);
+  const [isShown12, setIsShown12] = React.useState(false);
+  const [isShown13, setIsShown13] = React.useState(false);
 
-// function changeBackground(e) {
-//   e.target.style.background = 'red';
-// }
+  // function changeBackground(e) {
+  //   e.target.style.background = 'red';
+  // }
 
-const { id, links, thumbnail } = projects;
+  const { id, links, thumbnail } = projects;
 
-    return (
-        <div className="container-fluid" id="projects" >
-             <div className="row">
-                 <div className="col-sm-12 color">
-                   <h2 className="h2titleP text-center">Projects</h2>
-                   <div className="titleUnderlineP"></div>
-                     <div className="row">
-                         {/* {
+  return (
+    <div className="container-fluid" id="projects" >
+      <div className="row">
+        <div className="col-sm-12 color">
+          <h2 className="h2titleP text-center">Projects</h2>
+          <div className="titleUnderlineP"></div>
+          <div className="row">
+            {/* {
                            projects.map(project => (
                              <div key={project.id} className="col-sm-4 mb-5">
                                <a href={project.links}>
@@ -38,177 +42,248 @@ const { id, links, thumbnail } = projects;
                             </div>
                            ))   
                          } */}
-                            <div className="col-xs-12 col-sm-4 col-md-3 mb-5 pHeight">
-                               <a href="https://shopshi.netlify.app/" 
-                                      onMouseEnter={() => setIsShown(true)}
-                                      onMouseLeave={() => setIsShown(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeTOvzzTkt44jg2FM4qJr4BwD58lls90O_RA&usqp=CAU" alt="" className="imgProjects" />
-                                  <p className="pMobile d-block d-sm-none text-center">
-                                    Original Merchandising: Clothes, Calendars
-                                  </p>
-                               {isShown && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Original Merchandising: Clothes, Calendars
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>
-                            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight">
-                               <a href="https://sendasverdes.netlify.app/" 
-                                      onMouseEnter={() => setIsShown2(true)}
-                                      onMouseLeave={() => setIsShown2(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GPSZgylPbMJdO7MUYRxHK8pXT84DqatEg&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                     Cactus and Plants Shop
-                                   </p>
-                                   {/* <img src="https://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fsendasverdes.netlify.app" alt="" className="img-fluid imgProjects" /> */}
-                               {isShown2 && (
-                                 <div className="projectEffect text-center">
-                                   <p className="projectText ">
-                                     Cactus and Plants Shop
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>
-                            {/* <div className="col-sm-4  mb-5">
-                               <a href="https://www.alexetid imgProjectsev.com/" 
-                                      onMouseEnter={() => setIsShown3(true)}
-                                      onMouseLeave={() => setIsShown3(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotm7v3BOM1BrsUjnC_AR_Bcx6sM2OoLFkMg&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                               {isShown3 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Actor and Model Portfolio
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div> */}
-                              <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight">
-                               <a href="https://ziolukagency.netlify.app/" 
-                                      onMouseEnter={() => setIsShown4(true)}
-                                      onMouseLeave={() => setIsShown4(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb84GRsW2lDa3lWc_ehd27mU9qi7bbSG0KvA&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                    Content Marketing and Strategy Agency
-                                   </p>
-                                   {/* <img src="http://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fziolukagency.netlify.app" alt="" className="img-fluid imgProjects" /> */}
-                               {isShown4 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Content Marketing and Strategy Agency
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div> 
-                            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight">
-                               <a href="https://creaciones.netlify.app/" 
-                                      onMouseEnter={() => setIsShown5(true)}
-                                      onMouseLeave={() => setIsShown5(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VAmlC_1RG4u0N4JQk-2QYkgMSgKknoQIVw&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                     Agriculture Ecosystem and Machinery
-                                   </p>
-                               {isShown5 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Agriculture Ecosystem and Machinery
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>
-                            
-                            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
-                               <a href="https://vantha-realstate.netlify.app/" 
-                                      onMouseEnter={() => setIsShown6(true)}
-                                      onMouseLeave={() => setIsShown6(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIiKWlR-n0BeV14H0gGsfvmOBsVNxArM_aA&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                     Real State: Houses, Departments, Resorts                                   
-                                   </p>
-                               {isShown6 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Real State: Houses, Departments, Resorts
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>
-                            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
-                               <a href="https://cubus.netlify.app/" 
-                                      onMouseEnter={() => setIsShown7(true)}
-                                      onMouseLeave={() => setIsShown7(false)}
-                                      target="_blank"
-                                      >
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EvUeU8zqbu2s-eFIo6d93OdRDTBm8u9U9g&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                    Insurance Consulting Services                                   
-                                   </p>
-                                   {/* <img src="https://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fcubus.netlify.app%2Fseguros.html" alt="" className="img-fluid imgProjects" /> */}
-                               {isShown7 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Insurance Consulting Services
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>
-                            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
-                               <a href="https://muds.netlify.app/" 
-                                      onMouseEnter={() => setIsShown8(true)}
-                                      onMouseLeave={() => setIsShown8(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQe3YViYMFdn1EzfDEGhkW8nJXmcovepwylw&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                    Co-workers and Team App                                  
-                                   </p>
-                                   {/* <img src="http://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fmuds.netlify.app" alt="" className="img-fluid imgProjects" /> */}
-                               {isShown8 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Co-workers and Team App
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>
-                            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
-                               <a href="https://jolly-galileo-a7fc7c.netlify.app/" 
-                                      onMouseEnter={() => setIsShown9(true)}
-                                      onMouseLeave={() => setIsShown9(false)}
-                                      target="_blank">
-                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBi5khClpYivnr0Z2Ta0mUHSW_oeqU6K2ufg&usqp=CAU" alt="" className="img-fluid imgProjects" />
-                                   <p className="pMobile d-block d-sm-none text-center">
-                                   Software Development Services                                 
-                                   </p>
-                                   {/* <img src="http://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fjolly-galileo-a7fc7c.netlify.app" alt="" className="img-fluid imgProjects" /> */}
-                               {isShown9 && (
-                                 <div className="projectEffect">
-                                   <p className="projectText">
-                                     Software Development Services
-                                   </p>
-                                 </div>
-                               )}
-                               </a>
-                            </div>  
-                     </div>         
-                 </div>
-             </div>
+            <div className="col-xs-12 col-sm-4 col-md-3 mb-5 pHeight">
+              <a href="https://shopshi.netlify.app/"
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeTOvzzTkt44jg2FM4qJr4BwD58lls90O_RA&usqp=CAU" alt="" className="imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Original Merchandising: Clothes, Calendars
+                </p>
+                {isShown && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Original Merchandising: Clothes, Calendars
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight">
+              <a href="https://sendasverdes.netlify.app/"
+                onMouseEnter={() => setIsShown2(true)}
+                onMouseLeave={() => setIsShown2(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL6GPSZgylPbMJdO7MUYRxHK8pXT84DqatEg&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Cactus and Plants Shop
+                </p>
+                {/* <img src="https://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fsendasverdes.netlify.app" alt="" className="img-fluid imgProjects" /> */}
+                {isShown2 && (
+                  <div className="projectEffect text-center">
+                    <p className="projectText ">
+                      Cactus and Plants Shop
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+            {/* <div className="col-xs-12 col-sm-4  mb-5">
+              <a href="https://www.alexetid imgProjectsev.com/"
+                onMouseEnter={() => setIsShown3(true)}
+                onMouseLeave={() => setIsShown3(false)}>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotm7v3BOM1BrsUjnC_AR_Bcx6sM2OoLFkMg&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                {isShown3 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Actor and Model Portfolio
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div> */}
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight">
+              <a href="https://ziolukagency.netlify.app/"
+                onMouseEnter={() => setIsShown4(true)}
+                onMouseLeave={() => setIsShown4(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb84GRsW2lDa3lWc_ehd27mU9qi7bbSG0KvA&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Content Marketing and Strategy Agency
+                </p>
+                {/* <img src="http://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fziolukagency.netlify.app" alt="" className="img-fluid imgProjects" /> */}
+                {isShown4 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Content Marketing and Strategy Agency
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight">
+              <a href="https://creagro.netlify.app/"
+                onMouseEnter={() => setIsShown5(true)}
+                onMouseLeave={() => setIsShown5(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4VAmlC_1RG4u0N4JQk-2QYkgMSgKknoQIVw&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Agriculture Ecosystem and Machinery
+                </p>
+                {isShown5 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Agriculture Ecosystem and Machinery
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://vantha-realstate.netlify.app/"
+                onMouseEnter={() => setIsShown6(true)}
+                onMouseLeave={() => setIsShown6(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyIiKWlR-n0BeV14H0gGsfvmOBsVNxArM_aA&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Real State: Houses, Departments, Resorts
+                </p>
+                {isShown6 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Real State: Houses, Departments, Resorts
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://cubus.netlify.app/"
+                onMouseEnter={() => setIsShown7(true)}
+                onMouseLeave={() => setIsShown7(false)}>
+                {/* target="_blank"
+              > */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EvUeU8zqbu2s-eFIo6d93OdRDTBm8u9U9g&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Insurance Consulting Services
+                </p>
+                {/* <img src="https://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fcubus.netlify.app%2Fseguros.html" alt="" className="img-fluid imgProjects" /> */}
+                {isShown7 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Insurance Consulting Services
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://muds.netlify.app/"
+                onMouseEnter={() => setIsShown8(true)}
+                onMouseLeave={() => setIsShown8(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQe3YViYMFdn1EzfDEGhkW8nJXmcovepwylw&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Co-workers and Team App
+                </p>
+                {/* <img src="http://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fmuds.netlify.app" alt="" className="img-fluid imgProjects" /> */}
+                {isShown8 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Co-workers and Team App
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4  col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://fouldit.netlify.app/"
+                onMouseEnter={() => setIsShown9(true)}
+                onMouseLeave={() => setIsShown9(false)}>
+                {/* target="_blank"> */}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBi5khClpYivnr0Z2Ta0mUHSW_oeqU6K2ufg&usqp=CAU" alt="" className="img-fluid imgProjects" />
+                <p className="pMobile d-block d-sm-none text-center">
+                  Software Development Services
+                </p>
+                {/* <img src="http://free.pagepeeker.com/v2/thumbs.php?size=x&url=https%3A%2F%2Fjolly-galileo-a7fc7c.netlify.app" alt="" className="img-fluid imgProjects" /> */}
+                {isShown9 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Software Development Services
+                    </p>
+                  </div>
+                )}
+              </a>
+            </div>
+
+            <div className="col-xs-12 col-sm-4 col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://technicaltest.netlify.app/"
+                onMouseEnter={() => setIsShown10(true)}
+                onMouseLeave={() => setIsShown10(false)}>
+                <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="img-fluid imgProjects" />
+                {isShown10 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Privacy Hero: <br />We help to get your goals
+                    </p>
+                  </div>
+                )}
+              </a>
+              <h4 className="d-block d-sm-none textMobileP mt-2 text-white">Privacy Hero: <br />We help to get your goals</h4>
+            </div>
+
+            <div className="col-xs-12 col-sm-4 col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://vivaelfutbol.com.ar/"
+                onMouseEnter={() => setIsShown11(true)}
+                onMouseLeave={() => setIsShown11(false)}>
+                <img src="https://images.pexels.com/photos/978695/pexels-photo-978695.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="img-fluid imgProjects" />
+                {isShown11 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Viva el futbol: <br />Amateur Football Leagues
+                    </p>
+                  </div>
+                )}
+              </a>
+              <h4 className="d-block d-sm-none textMobileP text-white mt-2">Viva el futbol: <br />Amateur Football Leagues</h4>
+            </div>
+
+            <div className="col-xs-12 col-sm-4 col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://boombi.netlify.app/"
+                onMouseEnter={() => setIsShown12(true)}
+                onMouseLeave={() => setIsShown12(false)}>
+                <img src="https://images.pexels.com/photos/302428/pexels-photo-302428.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="img-fluid imgProjects" />
+                {isShown12 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Boombi: <br />Get funded the first day
+                    </p>
+                  </div>
+                )}
+              </a>
+              <h4 className="d-block d-sm-none textMobileP text-white mt-2">Boombi: <br />Get funded the first day</h4>
+            </div>
+
+            <div className="col-xs-12 col-sm-4 col-md-3 mb-5 pHeight mt-sm-5">
+              <a href="https://nuwegithubfinder.netlify.app"
+                onMouseEnter={() => setIsShown13(true)}
+                onMouseLeave={() => setIsShown13(false)}>
+                <img src="https://images.pexels.com/photos/3779746/pexels-photo-3779746.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" className="img-fluid imgProjects" />
+                {isShown13 && (
+                  <div className="projectEffect">
+                    <p className="projectText">
+                      Github Finder: <br />Find the repo you are looking for
+                    </p>
+                  </div>
+                )}
+              </a>
+              <h4 className="d-block d-sm-none textMobileP text-white mt-2">Github Finder: <br />Find the repo you are looking for</h4>
+            </div>
+
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default ProjectList

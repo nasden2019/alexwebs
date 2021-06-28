@@ -1062,3 +1062,18 @@ p {
 		opacity: 0.5;
 	}
 }
+
+/* height de 2 pics */
+@media (min-width: 730px) {
+	.heightpics {
+	   height: 318px!important;
+	}
+  }
+
+@media (min-width: 730px) {
+	.futbol {
+	   height: 398px!important;
+	}
+  }
+
+  
