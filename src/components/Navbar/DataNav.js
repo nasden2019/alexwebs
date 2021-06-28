@@ -42,7 +42,7 @@ export const social = [
     },
     {
         id: 4,
-        url: 'https://wa.me/+5493412550178',
+        url: 'https://wa.me/627139866',
         icon: <FaWhatsapp />
     },
 ]
